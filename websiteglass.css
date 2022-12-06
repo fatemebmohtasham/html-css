@@ -1,0 +1,224 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.main{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 746px;;
+  background: linear-gradient(to right top,#5FB2C3,#50C6C5,#5DD8B9,#86E7A2,#BBF287,#F9F871);
+
+}
+.glass{
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3));
+  backdrop-filter: blur(32px);
+  -webkit-backdrop-filter: blur(32px);
+  border-radius: 12px;
+  width:60%;
+  height:596.8px;
+  display:flex;
+  flex-direction: row;
+  position: relative;
+
+
+}
+.dashboard{
+  display: flex;
+  flex-direction:column;
+  flex: 1;
+  align-items: center;
+  justify-content: space-evenly;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 12px;
+
+}
+.pro{
+  width:70px;
+  margin-left:19px;
+  margin-top: 8px;
+ 
+}
+h3{
+  font-family: sans-serif;
+  color:rgb(32, 107, 108);
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 0px;
+  margin-top:4px;
+  text-align: center;
+}
+h4{
+  font-family: sans-serif;
+  color:rgb(32, 107, 108);
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 0px;
+  text-align: center;
+}
+.links{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.link{
+  display: flex;
+  align-items: center;
+  margin:15px 0 ;
+}
+.link p{
+  color:rgb(32, 107, 108);
+  font-size: 18px;
+  font-weight: 400;
+  margin-left:20px ;
+  font-family: sans-serif;
+}
+.box-game{
+  background:linear-gradient(to right top,#5FB2C3,#50C6C5,#5DD8B9,#86E7A2,#BBF287,#F9F871);
+  display: flex;
+  flex-direction: row;
+  border-radius:20px;
+  padding:15px 10px;
+  width:70%;
+  position: relative;
+}
+.box-game p{
+  color:rgb(255, 255, 255);
+  font-size:22px;
+  font-weight: 400;
+  font-family: sans-serif;
+  width: 50%;
+  padding:15px 10px;
+}
+.box-game img{
+  width:80px;
+  position: absolute;
+  top:13%;
+  right:5%;
+}
+.container-games{
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+  position: relative;
+}
+.status{
+  width:46%;
+  position: absolute;
+  top:5%;
+  left:9%;
+}
+.status h1{
+  font-family: sans-serif;
+  color: #426696;
+  font-weight: 600;
+  opacity: 0.8;
+  margin-bottom:8px;
+}
+.status input{
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.3) ;
+  border: none;
+  border-radius: 15px;
+  width:70%;
+  padding:8px;
+  margin-top: 0;
+}
+.cards{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:90%;
+  position: absolute;
+  top:20%;
+  left:5px;
+}
+.card{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-shrink: 0;
+  width: 80%;
+  background: linear-gradient(
+    to left top,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.5)
+  );
+  border-radius: 12px;
+  box-shadow: 1px 1px 2px 1px rgba(150, 147, 147, 0.3) ;
+  padding:20px 10px ;
+  margin:15px 7px 18px 15px;
+  position:relative;
+}
+.card img{
+  width:80px;
+  border-radius:35px;
+  margin-right:13px;
+}
+.card-info{
+  height:80%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: absolute;
+  top:12%;
+  left:26%;
+ 
+}
+.card-info h2{
+  font-family:sans-serif;
+  color: #19202a;
+  font-weight:400;
+  opacity: 0.8;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+.card-info p{
+  font-family:sans-serif;
+  color: #505153;
+  font-size:10px ;
+  opacity: 0.8;
+  margin-top:0px;
+  margin-bottom:0px;
+}
+.percentage{
+  font-family:sans-serif;
+  color: #50C6C5;
+  font-weight:400;
+  opacity: 0.8;
+  position: absolute;
+  right:5%;
+  top:20%;
+}
+.progress{
+  width:80%;
+  height: 25%;
+  border: none;
+  border-radius: 12px;
+  position: relative;
+  background: linear-gradient(to right top,#5FB2C3,#50C6C5);
+  z-index: 100;
+}
+.progress::after{
+  content: "";
+  width: 30%;
+  height:100%;
+  background:rgb(244, 230, 230);
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  position: absolute;
+  left:80%;
+
+}
